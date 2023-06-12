@@ -80,6 +80,8 @@ body{
 .header{
   min-width: 100%;
   box-shadow: var(--box-shadow);
+  background-color: var(--pc);
+
 }
   
 li{
@@ -198,11 +200,12 @@ svg{
 
 /* ----------------------Menu Page----------------------------- */
 #content.menu-page{
-  background-color: var(--sc);
   display: flex;
   align-items: center;
   /* min-height: 80vh; */
   padding: 2rem;
+  background-color: var(--sc);
+
 
 }
 
@@ -251,3 +254,31 @@ svg{
   width: 310px;
   /* height: 226px; */
 }
+
+/* -----------------About Page-------------------- */
+
+.about-page-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 2rem; */
+  background-color: var(--sc);
+  color: var(--pc);
+  border-radius: 6px;
+  padding: 2rem;
+
+}
+
+.about-header{
+  padding-bottom: 2rem;
+  font-size: calc(var(--fs-600) + 2vw);
+  font-family: var(--secondary-ff);
+}
+
+.about-para{
+  max-width: 60ch;
+  text-align: center;
+  font-size: calc(var(--fs-400) + 0.1vw);
+}
+

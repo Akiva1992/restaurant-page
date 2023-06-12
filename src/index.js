@@ -1,6 +1,7 @@
 import { appendContent } from "./appendContent.js";
 import { createHomePage} from "./home-page.js";
 import { createMenuPage} from "./menu-page.js";
+import { createAboutPage} from "./about-page.js";
 import './style.css';
 import heroImg from "./imgs/welcome-img.jpg";
 import poloImg from "./imgs/polo-img.jpg";
@@ -29,6 +30,7 @@ const pageSetup = (()=>{
         logoBtn.addEventListener("click", navigateHome);
         homeBtn.addEventListener("click", navigateHome);
         menuBtn.addEventListener("click", navigateToMenu);
+        aboutBtn.addEventListener("click", navigateToAbout);
         heroMenuBtn.addEventListener("click", navigateToMenu)
     };
 
@@ -44,6 +46,12 @@ const pageSetup = (()=>{
         appendContent(createMenuPage(poloImg, buckwheatImg, breadImg,oatsImg));
         bindEvents();
         console.log("Hello")
+    };
+
+    const navigateToAbout = (e)=>{
+        contentDiv.textContent= "";
+        appendContent(createAboutPage());
+        bindEvents();
     };
     
     init();

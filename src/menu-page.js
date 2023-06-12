@@ -7,10 +7,6 @@ const createMenuPage = (poloImgSrc, buckwheatImgSrc, breadImgSrc, oatsImgSrc)=>{
     let menuPageContent = createDiv();
     menuPageContent.classList.add("menu-page-content");
 
-    const h1 = createH1();
-    const p = createPara();
-    const img = createImg();
-
     // ---------------Polo-Card-----------------------//
     const poloCard = createDiv();
     poloCard.classList.add("polo","card");
